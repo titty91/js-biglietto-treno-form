@@ -11,8 +11,37 @@
         <h1>Hello Mondo</h1>
       </div>
     </div>
+
+    <!-- Il programma dovrà chiedere all'utente il
+    numero di chilometri che vuole
+    percorrere e l'età del passeggero.
+    Sulla base di queste informazioni dovrà
+    calcolare il prezzo totale del viaggio.
+    Il prezzo del biglietto è definito in base ai
+    km (0.21 € al km), ma va applicato uno
+    sconto del 20% per i minorenni e del
+    40% per gli over 65. -->
     <script>
 
-    </script>
+    var km = prompt('Quanti Km devi fare?');
+    var età = prompt('Quanti anni hai?');
+
+    var price = 0.21;
+    //var min = 1;
+    //var max = 105 -min +1;
+    var scontomin = 20/100;
+    var scontoover = 40/100;
+    var totale = (km * price);
+    //var totSconto = (totale * 20)/100;
+    var totSconto = totale - 2.1;
+    console.log(km, età, totale, totSconto);
+
+    // if(){
+    //   console.log('prezzo minorenne')
+    // } else{
+    //   console.log('prezzo over 65enni')
+    // }
+
+  </script>
   </body>
 </html>
