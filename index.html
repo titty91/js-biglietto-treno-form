@@ -8,7 +8,7 @@
   <body>
     <div class="box">
       <div class="row">
-        <h1>Hello Mondo</h1>
+        <h1 id="risultato"></h1>
       </div>
     </div>
 
@@ -23,24 +23,20 @@
     40% per gli over 65. -->
     <script>
 
-    var km = prompt('Quanti Km devi fare?');
-    var età = prompt('Quanti anni hai?');
 
-    var price = 0.21;
-    //var min = 1;
-    //var max = 105 -min +1;
-    var scontomin = 20/100;
-    var scontoover = 40/100;
-    var totale = (km * price);
-    //var totSconto = (totale * 20)/100;
-    var totSconto = totale - 2.1;
-    console.log(km, età, totale, totSconto);
+    var distanza = parseInt(prompt('Quanti Km devi fare?'));
+    var età = parseInt(prompt('Quanti anni hai?'));
 
-    // if(){
-    //   console.log('prezzo minorenne')
-    // } else{
-    //   console.log('prezzo over 65enni')
-    // }
+    var prezzo = distanza * 0.21;
+    var risultato = document.getElementbyId('result')
+    if (scontominorenni <18){
+      prezzo + (prezzo /100 * 20);
+    }else if (scontoover >65){
+      prezzo + (prezzo /100 * 40);
+    }
+
+    console.log( prezzo, )
+
 
   </script>
   </body>
