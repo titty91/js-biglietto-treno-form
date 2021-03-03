@@ -9,6 +9,9 @@
     <div class="box">
       <div class="row">
         <h1 id="risultato"></h1>
+        <div id="età">
+
+        </div>
       </div>
     </div>
 
@@ -21,11 +24,14 @@
     km (0.21 € al km), ma va applicato uno
     sconto del 20% per i minorenni e del
     40% per gli over 65. -->
+
     <script>
 
 
     var distanza = parseInt(prompt('Quanti Km devi fare?'));
     var età = parseInt(prompt('Quanti anni hai?'));
+
+    console.log(distanza, prezzo);
 
     var prezzo = distanza * 0.21;
     var risultato = document.getElementbyId('result')
@@ -39,5 +45,8 @@
 
 
   </script>
+
+
+
   </body>
 </html>
