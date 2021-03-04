@@ -8,7 +8,7 @@
   <body>
     <div class="box">
       <div class="row">
-        <h1 id="risultato"></h1>
+        <h1 id="result"></h1>
         <div id="età">
 
         </div>
@@ -29,19 +29,20 @@
 
 
     var distanza = parseInt(prompt('Quanti Km devi fare?'));
-    var età = parseInt(prompt('Quanti anni hai?'));
+    var age = parseInt(prompt('Quanti anni hai?'));
 
-    console.log(distanza, prezzo);
 
     var prezzo = distanza * 0.21;
-    var risultato = document.getElementbyId('result')
-    if (scontominorenni <18){
-      prezzo + (prezzo /100 * 20);
-    }else if (scontoover >65){
-      prezzo + (prezzo /100 * 40);
+    console.log(distanza, prezzo);
+
+    if (age < 18){
+      prezzo = prezzo /100 * 80;
+    }else if (age > 65){
+      prezzo = prezzo /100 * 60;
     }
 
-    console.log( prezzo, )
+    console.log(prezzo,'€');
+
 
 
   </script>
